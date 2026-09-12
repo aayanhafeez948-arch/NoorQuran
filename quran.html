@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NoorQuran - Online Quran Academy</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5faf7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+
+        header {
+            background-color: #075e3f;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #d9f5e6;
+        }
+
+        /* Hero */
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background-color: #e3f3eb;
+        }
+
+        .salam {
+            font-size: 25px;
+            color: #075e3f;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #075e3f;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #075e3f;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #043d2a;
+        }
+
+        /* Sections */
+
+        section {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #075e3f;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        section p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 17px;
+        }
+
+        /* Courses */
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .course {
+            background-color: white;
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+        }
+
+        .course h3 {
+            color: #075e3f;
+            margin-bottom: 10px;
+        }
+
+        .course p {
+            font-size: 15px;
+        }
+
+        /* About */
+
+        .about {
+            background-color: #eaf6ef;
+        }
+
+        /* Admission */
+
+        .admission {
+            background-color: white;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 30px auto 0;
+            text-align: left;
+            background-color: #f5faf7;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #075e3f;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 7px;
+            margin-bottom: 18px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            background-color: #075e3f;
+            color: white;
+            border: none;
+            padding: 13px;
+            border-radius: 7px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #043d2a;
+        }
+
+        /* Contact */
+
+        .contact {
+            background-color: #e3f3eb;
+        }
+
+        .whatsapp {
+            display: inline-block;
+            margin-top: 20px;
+            background-color: #075e3f;
+            color: white;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+
+        footer {
+            background-color: #075e3f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .courses {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 5%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            🌙 NoorQuran
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#admission">Admission</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- HOME -->
+
+    <section class="hero" id="home">
+
+        <div class="salam">
+            السلام علیکم ورحمة اللہ وبرکاتہ 🌸
+        </div>
+
+        <h1>Welcome to NoorQuran 📖</h1>
+
+        <p>
+            Learn the Holy Quran Online with Tajweed,
+            understanding and Islamic education.
+        </p>
+
+        <a href="#admission" class="button">
+            Join Now
+        </a>
+
+    </section>
+
+
+    <!-- COURSES -->
+
+    <section id="courses">
+
+        <h2>📚 Our Courses</h2>
+
+        <div class="courses">
+
+            <div class="course">
+                <h3>📖 Quran Nazra</h3>
+                <p>
+                    Learn to read the Holy Quran correctly
+                    with proper pronunciation.
+                </p>
+            </div>
+
+            <div class="course">
+                <h3>🕌 Quran with Tajweed</h3>
+                <p>
+                    Learn Quran recitation according to
+                    the rules of Tajweed.
+                </p>
+            </div>
+
+            <div class="course">
+                <h3>🌙 Hifz-ul-Quran</h3>
+                <p>
+                    Memorize the Holy Quran with
+                    proper guidance and revision.
+                </p>
+            </div>
+
+            <div class="course">
+                <h3>📚 Translation</h3>
+                <p>
+                    Understand the beautiful meanings
+                    of the Holy Quran.
+                </p>
+            </div>
+
+            <div class="course">
+                <h3>🔍 Tafseer</h3>
+                <p>
+                    Learn the explanation and lessons
+                    of the Holy Quran.
+                </p>
+            </div>
+
+            <div class="course">
+                <h3>🤲 Duas & Sunnahs</h3>
+                <p>
+                    Learn daily duas, sunnahs and
+                    Islamic manners.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <h2>👩‍🏫 About Teacher</h2>
+
+        <p>
+            Assalam-o-Alaikum! I am a Quran teacher dedicated
+            to helping children and adults learn the Holy Quran
+            in an easy, friendly and Islamic environment.
+        </p>
+
+        <br>
+
+        <p>
+            My goal is to help students improve their Quran
+            recitation, Tajweed, understanding and Islamic manners.
+        </p>
+
+    </section>
+
+
+    <!-- ADMISSION -->
+
+    <section class="admission" id="admission">
+
+        <h2>📝 Admission Open</h2>
+
+        <p>
+            Admissions are now open for Online Quran Classes.
+            Fill out the form below to contact us.
+        </p>
+
+
+        <form>
+
+            <label>Student Name</label>
+            <input type="text" placeholder="Enter student name">
+
+
+            <label>Age</label>
+            <input type="number" placeholder="Enter age">
+
+
+            <label>Country</label>
+            <input type="text" placeholder="Enter country">
+
+
+            <label>Select Course</label>
+
+            <select>
+
+                <option>Quran Nazra</option>
+                <option>Quran with Tajweed</option>
+                <option>Hifz-ul-Quran</option>
+                <option>Quran Translation</option>
+                <option>Tafseer</option>
+                <option>Duas & Sunnahs</option>
+
+            </select>
+
+
+            <label>WhatsApp Number</label>
+            <input type="tel" placeholder="Enter WhatsApp number">
+
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter email">
+
+
+            <label>Message</label>
+            <textarea placeholder="Write your message"></textarea>
+
+
+            <button type="submit">
+                Submit Admission
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+        <p>
+            For admission and further details,
+            contact us on WhatsApp.
+        </p>
+
+        <a
+            href="https://wa.me/923234302429"
+            target="_blank"
+            class="whatsapp">
+            💬 Contact on WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 NoorQuran | Learn Quran, Live Quran 🌙📖
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
